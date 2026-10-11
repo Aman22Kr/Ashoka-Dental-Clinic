@@ -446,6 +446,126 @@ export const AshokaHeader: React.FC<AshokaHeaderProps> = ({
             </div>
           </div>
         </div>
+
+        {/* Mobile Upper Menu (Always visible on mobile & tablet) */}
+        <div className="lg:hidden w-full border-t border-[#d8e1dd] bg-[#f4f9f7] px-3 py-1.5 overflow-x-auto scrollbar-none flex items-center gap-1.5 text-xs font-outfit whitespace-nowrap shadow-2xs">
+          <button
+            onClick={() => navigateTo('home')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath === 'home'
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {t.navHome}
+          </button>
+
+          <button
+            onClick={() => navigateTo('treatments')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath.startsWith('treatments') || currentPath.startsWith('service')
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {navLabels.treatments}
+          </button>
+
+          <button
+            onClick={() => navigateTo('dental-tourism')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 flex items-center gap-1 ${
+              currentPath.startsWith('dental-tourism') || currentPath.startsWith('tourism')
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            <span>{navLabels.tourism}</span>
+            <span className={`text-[9px] px-1 py-0.2 rounded-full font-bold ${
+              currentPath.startsWith('dental-tourism') || currentPath.startsWith('tourism')
+                ? 'bg-teal-700 text-teal-100'
+                : 'bg-emerald-100 text-emerald-800'
+            }`}>
+              80%
+            </span>
+          </button>
+
+          <button
+            onClick={() => navigateTo('patient-resources')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath.startsWith('patient-resources')
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {navLabels.patient}
+          </button>
+
+          <button
+            onClick={() => navigateTo('blog')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath.startsWith('blog')
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {navLabels.blog}
+          </button>
+
+          <button
+            onClick={() => navigateTo('conditions')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath === 'conditions'
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {t.navConditions}
+          </button>
+
+          <button
+            onClick={() => navigateTo('pricing')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath === 'pricing'
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {t.navPricing}
+          </button>
+
+          <button
+            onClick={() => navigateTo('doctor')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath === 'doctor'
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {t.navDoctor}
+          </button>
+
+          <button
+            onClick={() => navigateTo('reviews')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath === 'reviews'
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {t.navReviews}
+          </button>
+
+          <button
+            onClick={() => navigateTo('contact')}
+            className={`px-3 py-1.5 rounded-xl transition-all cursor-pointer shrink-0 ${
+              currentPath === 'contact'
+                ? 'bg-[#173e3a] text-white font-bold shadow-xs'
+                : 'bg-white/90 text-slate-700 hover:bg-teal-50 hover:text-teal-900 border border-[#d8e1dd]'
+            }`}
+          >
+            {t.navContact}
+          </button>
+        </div>
       </div>
 
     </header>
