@@ -1,0 +1,6 @@
+{
+  "name": "Signature Smiles - Premium Dental Clinics Mumbai",
+  "description": "Replica of Signature Smiles Dental Clinic website featuring multi-specialty dental treatments, Mumbai branches, smile makeover gallery, dental tourism, sub-pages, and GitHub deployment ready configuration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
