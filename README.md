@@ -1,8 +1,6 @@
-# Classic Smiles - Premier Dental Clinics Mumbai (Website Replica)
+# Ashoka-Dental-Clinic
 
-A modern, responsive website for **Classic Smiles Dental Clinics** in Mumbai, India.
-
-Built with **React 19**, **TypeScript**, **Tailwind CSS**, **Lucide Icons**, and pre-configured for **1-click GitHub Pages deployment**.
+Built with **React 19**, **TypeScript**, **Tailwind CSS**, **Lucide Icons**.
 
 ---
 
